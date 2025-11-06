@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* ===== Global Dark Theme ===== */
+:root {
+  --bg-dark: #0b0f1a;
+  --text-light: #e5e7eb;
+  --panel: #0f172a;
+  --muted: #9ca3af;
+  --blue: #3b82f6;
+  --purple: #8b5cf6;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: system-ui, sans-serif;
+}
+
+/* Selection highlight */
+::selection {
+  background: color-mix(in oklab, var(--blue) 60%, transparent);
+}
+
+/* Fade-in animation */
+.app-fade-in {
+  animation: appFadeIn 0.4s ease-out both;
+}
+@keyframes appFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Search focus glow */
+.glow-focus:focus {
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--purple) 50%, transparent),
+              0 0 0 6px color-mix(in oklab, var(--blue) 30%, transparent);
+}
+
+/* Skeleton loading shimmer */
+.skel {
+  position: relative;
+  overflow: hidden;
+  background: #141b2c;
+}
+.skel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  animation: shimmer 1.1s infinite;
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}

@@ -1,0 +1,26 @@
+# Python venv
+venv/
+.env/
+
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+public/build/
+*.log
+
+# Vite / Next / React cache folders
+.vite/
+.next/
+.cache/
+*.tsbuildinfo
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc

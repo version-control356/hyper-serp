@@ -1,0 +1,30 @@
+{
+  "ai": [
+    {
+      "title": "Ai",
+      "url": "https://en.wikipedia.org/wiki/ai",
+      "snippet": "AI most frequently refers to artificial intelligence, which is intelligence demonstrated by machines.\n"
+    }
+  ],
+  "aastik": [
+    {
+      "title": "Aastik",
+      "url": "https://en.wikipedia.org/wiki/aastik",
+      "snippet": "\n"
+    }
+  ],
+  "hi": [
+    {
+      "title": "HI",
+      "url": "https://en.wikipedia.org/wiki/hi",
+      "snippet": "\n"
+    }
+  ],
+  "dev": [
+    {
+      "title": "Dev",
+      "url": "https://en.wikipedia.org/wiki/dev",
+      "snippet": "Dev, devs, or DEV may refer to:\n"
+    }
+  ]
+}
