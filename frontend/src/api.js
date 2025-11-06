@@ -1,4 +1,5 @@
-const API_BASE = "http://127.0.0.1:8000"; // backend URL
+const API_BASE = import.meta.env.VITE_API_URL;
+
 
 export async function searchQuery(query) {
   console.log("Searching:", query);
