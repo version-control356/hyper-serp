@@ -1,6 +1,7 @@
 const API_BASE = import.meta.env.VITE_API_URL;
 
 
+
 export async function searchQuery(query) {
   console.log("Searching:", query);
   try {
